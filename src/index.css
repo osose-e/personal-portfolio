@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+a,
+button {
+  cursor: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fafaf8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #A85A6D;
+  border-radius: 2px;
+}
+
+/* Modal scrollbar: transparent track */
+.project-modal-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+textarea,
+input {
+  font-family: 'DM Sans', sans-serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Scroll hint: bounce + pulse */
+@keyframes scroll-hint-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+@keyframes scroll-hint-pulse {
+  0%, 100% { opacity: 0.85; }
+50% { opacity: 1; }
+}
+.scroll-hint-visible {
+  animation: scroll-hint-bounce 2s ease-in-out infinite, scroll-hint-pulse 2s ease-in-out infinite;
+}
+
+/* Resume section: force bold on key terms */
+#resume .resume-desc strong {
+  font-weight: 600;
+}
