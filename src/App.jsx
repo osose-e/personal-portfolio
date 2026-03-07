@@ -435,7 +435,7 @@ function Contact() {
         </Reveal>
         <div style={{ marginTop: 80, paddingTop: 28, borderTop: "1px solid rgba(27,42,74,0.1)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <span style={{ fontFamily: "'Playfair Display',serif", fontSize: "0.92rem", color: M, fontStyle: "italic" }}>Osose Ewaleifoh</span>
-          <span style={{ fontFamily: "'DM Sans',sans-serif", fontSize: "0.7rem", color: M, letterSpacing: "0.08em" }}>2025 · OE</span>
+          <span style={{ fontFamily: "'DM Sans',sans-serif", fontSize: "0.7rem", color: M, letterSpacing: "0.08em" }}>2025 · OE</span> 
         </div>
       </div>
     </section>
