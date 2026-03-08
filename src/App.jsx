@@ -361,7 +361,7 @@ function About() {
             <Reveal key={group.category} delay={gi * 0.07} style={{ height: "100%" }}>
               <div style={{ background: S, borderRadius: 14, padding: 22, border: `1px solid ${BR}`, height: "100%", minHeight: 0, display: "flex", flexDirection: "column" }}>
                 <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: "0.66rem", letterSpacing: "0.15em", textTransform: "uppercase", color: B, marginBottom: 18, fontWeight: 500, flexShrink: 0 }}>{group.category}</p>
-                <div style={{ display: group.category === "Programming Languages" ? "grid" : "flex", flexDirection: group.category === "Programming Languages" ? undefined : "column", gridTemplateColumns: group.category === "Programming Languages" ? "1fr 1fr 1fr" : undefined, gap: 13, flex: 1, minHeight: 0 }}>
+                <div style={{ display: group.category.startsWith("Programming Languages") ? "grid" : "flex", flexDirection: group.category.startsWith("Programming Languages") ? undefined : "column", gridTemplateColumns: group.category.startsWith("Programming Languages") ? "1fr 1fr 1fr" : undefined, gap: 13, flex: 1, minHeight: 0 }}>
                   {group.items.map((skill) => (
                     <div key={skill.name} style={{ display: "flex", alignItems: "center", gap: 10 }}>
                       <img src={skill.icon} alt={skill.name} width={18} height={18} style={{ objectFit: "contain", flexShrink: 0 }} onError={(e) => { e.target.style.display = "none"; }} />
